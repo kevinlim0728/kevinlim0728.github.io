@@ -4,7 +4,9 @@
     --color-body: #b6cbce;
     --color-heading: #eef3db;
     --color-base: #033f47;
-    --color-base2: #022a30;
+    /* --color-base2: #022a30;
+    --color-base: #033a47; */
+    --color-base2: #022430;
     --color-brand: #e0f780;
     --color-brand2: #deff58;
     --sidbar-width: 240px;
@@ -103,7 +105,7 @@ img {
     }
 
     .navbar-brand img {
-        border: 8px solid var(--color-brand);
+        border: 8px solid var(--color-base);
     }
 
     /* CONTENT WRAPPER */
