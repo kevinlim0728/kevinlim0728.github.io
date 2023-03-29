@@ -131,7 +131,7 @@
                                 <i class="las la-mobile"></i>
                             </div>
                             <h5 class="mt-4 mb-2">Software Development</h5>
-                            <p>Currently expanding my knowledge and skills in software development.Example: POS System, Smart Home System.</p>
+                            <p>Currently expanding my knowledge and skills in software development.Example: POS System, NFC Business Card.</p>
                          
                            
                             <!-- <a href="#" class="link-custom">Read More</a> -->
@@ -440,6 +440,23 @@
         <!-- //REVIEWS -->
 
         <!-- BLOG -->
+        <style>
+        .langs a{
+          color: white;
+          text-decoration: none;
+          padding: 12px;
+          font-weight: 650;
+          transition: .3s linear;
+          border-radius: 10%;
+        }
+        .langs a:hover{
+            background: #034a53;
+        }
+        .langs a.active{
+            background: #034a53;
+        }
+        </style>
+
         <section id="blog" class="full-height px-lg-5">
             <div class="container">
 
@@ -447,6 +464,11 @@
                     <div class="col-lg-8">
                         <h6 class="text-brand">BLOG</h6>
                         <h1>My BLog Posts</h1>
+                        <br/>
+                        <div class="langs">
+                          <a id="link" href="#blog" language="chinese" class="active">CN</a>
+                          <a id="link" href="#blog" language="english">ENG</a>
+                        </div>
                     </div>
                 </div>
 
@@ -459,7 +481,7 @@
                             </div>
                             <div class="card-custom-content p-4">
                                 <p class="text-brand mb-2">01 Mar, 2023</p>
-                                <h5 class="mb-4">如何设计一个良好的企业网站帮助提高企业品牌价值？</h5>
+                                <h5 class="mb-4" id="line1">如何设计一个良好的企业网站帮助提高企业品牌价值？</h5>
                                 <a href="blogs/blog1.html" class="link-custom">Read More</a>
                             </div>
                         </div>
@@ -472,7 +494,7 @@
                             </div>
                             <div class="card-custom-content p-4">
                                 <p class="text-brand mb-2">05 Mar, 2023</p>
-                                <h5 class="mb-4">介绍一页式网站以及一页式网页设计的各种应用案例 !</h5>
+                                <h5 class="mb-4" id="line2">介绍一页式网站以及一页式网页设计的各种应用案例 !</h5>
                                 <a href="#" class="link-custom">Read More</a>
                             </div>
                         </div>
@@ -627,6 +649,7 @@
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/readmore.js"></script>
     <script src="./assets/js/animation.js"></script>
+    <script src="./assets/js/lang.js"></script>
 
 
 
