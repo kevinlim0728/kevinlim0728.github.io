@@ -12,9 +12,20 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/readmore.css">
     <link rel="stylesheet" href="./assets/css/animation.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
+
+
+
+       <!-- Spinner Start -->
+       <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
+        <!-- <img class="position-absolute top-50 start-50 translate-middle" src="icon-1.png" alt="Icon"> -->
+      </div>
+      <!-- Spinner End -->
+
 
 
     <!-- NAVBAR -->
@@ -617,6 +628,25 @@
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/readmore.js"></script>
     <script src="./assets/js/animation.js"></script>
+
+
+
+    
+    <!-- Template Javascript -->
+    <script>
+      (function ($) {
+
+          // Spinner
+          var spinner = function () {
+              setTimeout(function () {
+                  if ($('#spinner').length > 0) {
+                      $('#spinner').removeClass('show');
+                  }
+              }, 1);
+          };
+          spinner();
+      })(jQuery);
+    </script>
 
 
 
