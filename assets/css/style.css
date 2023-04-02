@@ -9,6 +9,11 @@
     --color-base2: #022430;
     --color-brand: #e0f780;
     --color-brand2: #deff58;
+
+    /* --color-brand: #eb6f36;
+    --color-brand2: #db4e0d; */
+
+
     --sidbar-width: 240px;
     --font-base: "Bai Jamjuree";
 }
@@ -115,10 +120,19 @@ img {
 }
 
 /* BTN */
+
+@media (min-width: 400px) {
 .btn {
     padding: 12px 28px;
     font-weight: 700;
 }
+}
+
+.btn {
+    padding: 10px 18px;
+    font-weight: 700;
+}
+
 
 .btn-brand {
     background-color: var(--color-brand);

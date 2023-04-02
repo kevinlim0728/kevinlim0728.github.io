@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../assets/css/readmore.css">
     <link rel="stylesheet" href="lang.css">
 
+ 
+
     
 </head>
 
@@ -259,5 +261,20 @@
     <script src="../assets/js/readmore.js"></script>
     <script src="lang.js"></script>
 </body>
+
+<script>
+    var color =sessionStorage.getItem("color");
+    
+    if(color=="orange"){
+        document.documentElement.style.setProperty('--color-brand', '#eb6f36');
+        document.documentElement.style.setProperty('--color-brand2', '#db4e0d');
+        sessionStorage.setItem("color", "orange");
+    }else{
+        document.documentElement.style.setProperty('--color-brand', '#e0f780');
+        document.documentElement.style.setProperty('--color-brand2', '#deff58');
+        sessionStorage.setItem("color", "yellow");
+    }
+        
+</script>
 
 </html>
