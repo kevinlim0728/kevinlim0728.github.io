@@ -1,5 +1,6 @@
 let langs = document.querySelector(".langs"),
      link = document.querySelectorAll("#link");
+     link2 = document.querySelectorAll("#link2");
 
 let title = document.querySelector("#tittle1"),
     line1 = document.querySelector("#line1"),
@@ -53,6 +54,9 @@ let title = document.querySelector("#tittle1"),
     line49 = document.querySelector("#line49");
     line50 = document.querySelector("#line50");
     line51 = document.querySelector("#line51");
+
+
+    title3 = document.querySelector("#tittle3"),
 
 
 
@@ -121,6 +125,17 @@ link.forEach(el=>{
      })
 })
 
+link2.forEach(el=>{
+     el.addEventListener("click", ()=>{
+          langs.querySelector(".active").classList.remove("active");
+          el.classList.add("active");
+
+          let attr = el.getAttribute("language")
+          title3.textContent = data[attr].title3
+     })
+})
+
+
 
 
 let data = {
@@ -186,6 +201,11 @@ let data = {
           line49: "5. Launch and acceptance",
           line50: "After transferring to the official host, the whole case acceptance and background operation education and training will be carried out to complete the complete website building service.",
           line51: "The whole process is time-consuming and depends on the size of the project. During the process, I will repeatedly discuss and confirm with the customer, because I believe that only careful service can create a unique and high-quality corporate website together with the customer. If you are looking for If you are looking for a suitable web design company, then feel free to entrust me with the design, and contact me now! ",
+
+
+
+
+          title3: "See how foreign web designers design, mind-blowing web design!",
           
        
           
@@ -257,7 +277,7 @@ let data = {
 
 
 
-
+          title3: "看看外国的网页设计师都怎么玩，令人惊叹的网页设计 !",
 
      }
 }
