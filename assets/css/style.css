@@ -217,6 +217,8 @@ img {
 }
 
 
+@media (min-width: 992px) {
+
 #typewriter #typehere {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
@@ -250,10 +252,6 @@ img {
 
 
 
-
-  
-
-  @media (min-width: 992px) {
 
     #blog1image2 {
         width: 50%;

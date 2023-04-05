@@ -45,3 +45,21 @@
 	</div>
 </div>
 <script src="game1.js"></script>
+
+
+<script>
+
+	const userAgent = navigator.userAgent;
+
+	if (userAgent.match(/Android/i)
+		  || userAgent.match(/webOS/i)
+		  || userAgent.match(/iPhone/i)
+		  || userAgent.match(/iPad/i)
+		  || userAgent.match(/iPod/i)
+		  || userAgent.match(/BlackBerry/i)
+		  || userAgent.match(/Windows Phone/i)) {
+		alert("Sorry, you are using a mobile device. Please try it on desktop device.");
+		location.href = "../index.html#game";
+	}
+	
+</script>
