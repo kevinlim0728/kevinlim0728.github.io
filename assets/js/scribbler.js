@@ -13,16 +13,16 @@ var getAll = function (selector, scope) {
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
   var txt = `Thanks for taking the time to review my portfolio.
-
-            ###There are 5 steps for me to complete your project.
+            
+            Interested in working together? 5 steps for me to complete your project.
             1.Research & Planning
             2.Layout Design
             3.Development & Coding
             4.Testing Program 
             5.Launch & Maintenance
-            [Contact me now!]
             
-            kevin ~ $`;
+            [Contact me now!]
+            `;
   var speed = 60;
 
   function typeItOut () {
